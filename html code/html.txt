@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- start header -->
+    <div class="header">
+        <!-- start nav -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><i class="fa-solid fa-hotel" style="color: #000000;margin-right: 10px;"></i>Hotel</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#roo">Room</a>
+                  <a class="nav-link" href="#abo">About</a>
+                  <a class="nav-link" href="#con">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!-- end nav -->
+
+    </div>
+    <!-- end heaer -->
+    <!-- start photo -->
+    <div class="photo">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://img.freepik.com/free-photo/full-shot-man-carrying-baggage_23-2149963942.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Welcome To Balma Hotel</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/female-receptionist-elegant-suit-during-work-hours_23-2149714382.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Welcome To Mullar Hotel</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.freepik.com/premium-photo/minsk-belarus-august-2017-columns-guestroom-hall-reception-modern-luxury-hotel_97694-6572.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Welcoem To Sane Hotel</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <!-- end photo -->
+    <!-- start room -->
+    <div class="room" id="roo">
+        <div class="continer">
+            <h3>Room:</h3>
+            <div class="alert alert-info" role="alert">
+              A simple info alert—check it out!
+            </div>
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, minima.</p>
+        </div>
+        <div class="content">
+          <form>
+            <div class="row">
+              <div class="col-md-6 col-lg-6 col-xl-3 mb-2">
+                <h6 class="mt-2"><i class="fa-solid fa-calendar-days" style="color: #000000;"></i>Check In</h6>
+                <input type="text" class="form-control mb-2" placeholder="DD MM YY" name="email">
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-3 mb-2">
+                <h6 class="mt-2"><i class="fa-solid fa-person mb-2" style="color: #000000;"></i>Adults</h6>
+
+                <input type="password" class="form-control" placeholder="1" name="pswd">
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-3 mb-2">
+                <h6 class="mt-2"><i class="fa-solid fa-calendar-days mb-2" style="color: #000000;"></i>Check Out</h6>
+
+                <input type="password" class="form-control" placeholder="DD MM YY" name="pswd">
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-3 mb-2">
+                <h6 class="mt-2"><i class="fa-solid fa-person-dress mb-2 " style="color: #000000;"></i>Kids</h4>
+
+                <input type="password" class="form-control" placeholder="1"  name="pswd">
+              </div>
+            </div>
+          </form> 
+            <!-- start info -->
+
+
+
+
+        </div>
+        <div class="footer">
+            <!-- start card -->
+              <div class="row m-1 pt-2">
+                <div class=" col-12 col-md-12 col-lg-6 col-xl-4">
+                    <div class="card w-100 mt-1" style="width:100%;">
+                        <img src="photo/room_single.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Single Room</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">From $99</li>
+                          <li class="list-group-item">Single Bed</li>
+                          <li class="list-group-item">15 m<sup>2</sup></li>
+                          <li class="list-group-item"><i class="fa-solid fa-wifi" style="color: #000000;"></i> <i class="fa-solid fa-phone" style="color: #000000;"></i> <i class="fa-solid fa-bath" style="color: #000000;"></i></li>
+
+
+                        </ul>
+                        <div class="card-body" style="line-height: 2;">
+                          <button class="btn btn-outline-primary m-2 lh-lg">Buy Now</button>
+                          <button class="btn btn-outline-primary">Order Now</button>
+    
+                        </div>
+                      </div>
+
+                </div>
+                <div class=" col-12 col-md-12 col-lg-6 col-xl-4">
+                  <div class="card w-100  mt-1" style="width:100%;">
+                      <img src="photo/room_double.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Double Room</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">From $169</li>
+                        <li class="list-group-item">Double Bed</li>
+                        <li class="list-group-item">15 m<sup>2</sup></li>
+                        <li class="list-group-item"><i class="fa-solid fa-wifi" style="color: #000000;"></i> <i class="fa-solid fa-phone" style="color: #000000;"></i> <i class="fa-solid fa-bath" style="color: #000000;"></i></li>
+
+
+                      </ul>
+                      <div class="card-body" style="line-height: 2;">
+                        <button class="btn btn-outline-primary m-2 lh-lg">Buy Now</button>
+                        <button class="btn btn-outline-primary">Order Now</button>
+  
+                      </div>
+                    </div>
+
+              </div>
+              <div class=" col-12 col-md-12 col-lg-6 col-xl-4">
+                <div class="card w-100 mt-1" style="width:100%;">
+                    <img src="photo/room_deluxe.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Deluxe Room</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">From $300</li>
+                      <li class="list-group-item">Deluxe Bed</li>
+                      <li class="list-group-item">15 m<sup>2</sup></li>
+                      <li class="list-group-item"><i class="fa-solid fa-wifi" style="color: #000000;"></i> <i class="fa-solid fa-phone" style="color: #000000;"></i> <i class="fa-solid fa-bath" style="color: #000000;"></i></li>
+
+
+                    </ul>
+                    <div class="card-body" style="line-height: 2;">
+                      <button class="btn btn-outline-primary m-2 lh-lg">Buy Now</button>
+                      <button class="btn btn-outline-primary">Order Now</button>
+
+                    </div>
+                  </div>
+
+            </div>
+
+            </div>
+
+            </div>
+
+
+
+
+
+
+
+            <!-- end card -->
+    </div>
+    <!-- end room -->
+    <!-- start about -->
+    <div class="about" id="abo">
+        <div class="continer">
+            <h2>About</h2>
+            <div class="alert alert-warning" role="alert">
+              A simple warning alert—check it out!
+            </div>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates sapiente ipsam enim dolores est eius, ab rerum odit hic! Nihil similique ex doloribus temporibus numquam ea dolores sequi, dicta facilis atque eaque nesciunt minima eius aperiam voluptatibus qui, repellendus cumque deserunt alias eum et nisi explicabo rerum. Corporis soluta, magni ipsam perferendis aut, quo tenetur eius recusandae doloremque ea nihil?</p>
+        </div>
+        <div class="content">
+            <img src="photo/map.jpg" alt="">
+        </div>
+        <div class="footer">
+            <h2><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i>some adr .chicago ,Us</h2>
+            <h2><i class="fa-solid fa-phone" style="color: #ff0000;"></i>01276612118</h2>
+            <h2><i class="fa-regular fa-envelope" style="color: #ff0000;"></i>Email:mail.com</h2>
+        </div>
+    </div>
+    <!-- end about -->
+    <!-- start info -->
+    <div class="info">
+        <div class="continer">
+            <p>On Demand, We Can Offer Playstion,Babycall care,Dog Equpment ,Etc</p>
+        </div>
+    </div>
+    <!-- end info -->
+    <!-- start our Hotel -->
+    <div class="our">
+        <div class="continer">
+            <h3>Our Hotel :</h3>
+            <div class="alert alert-danger" role="alert">
+              A simple danger alert—check it out!
+            </div>
+            
+            <p>You can Find Our Hotels anywhere in Word :</p>
+        </div>
+        <div class="content">
+            <img src="https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" style="border-radius: 10px;" alt="">
+            <img src="https://img.freepik.com/premium-photo/vacation-brown-youth-room-sleeping_974729-56374.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" style="border-radius: 10px;" alt="">
+            <img src="https://img.freepik.com/premium-photo/vacation-brown-youth-room-sleeping_974729-56361.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" style="border-radius: 10px;" alt="">
+            <img src="https://img.freepik.com/premium-photo/russia-moscow-november-26-2018-say-wow-hotel-hotel-dormitory-have-many-beds-arranged-generative-ai_874904-3084.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" style="border-radius: 10px;" alt="">
+            <img src="https://img.freepik.com/premium-photo/vacation-brown-youth-room-sleeping_974729-56353.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" style="border-radius: 10px;" alt="">
+            <img src="https://img.freepik.com/premium-photo/vacation-brown-youth-room-sleeping_974729-56361.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" style="border-radius: 10px;" alt="">
+
+        </div>
+        <div class="footer">
+            <div class="continer">
+                <h2>Get The Best Offer Frist !</h2>
+                <h4>join our Newpaper</h4>
+                <h5>Email</h5>
+                <input type="email" placeholder="Email">
+                <button class="btn btn-light" style="margin-top: 10px;">Subscripe</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- end our Hoter -->
+    <!-- start contact -->
+    <div class="contact" id="con">
+        <div class="continer">
+            <h4>Contact:</h4>
+            <div class="alert alert-primary" role="alert">
+              A simple primary alert—check it out!
+            </div>
+            
+            <p>If You Have Question,do not hotel to ask them :</p>
+        </div>
+        <div class="contentt">
+          <div class="row m-2 text-left lg-lg">
+            <div class="col-12">
+              <h3><i class="fa-solid fa-location-dot" style="color: #ff0000;margin-right: 10px;"></i>some adr .chicago ,Us</h3>
+
+
+            </div>
+            <div class="col-12">
+              <h3><i class="fa-solid fa-phone" style="color: #ff0000; margin-right: 10px;"></i>01276612118</h3>
+
+
+            </div>
+            <div class="col-12">
+              <h3><i class="fa-regular fa-envelope" style="color: #ff0000;margin-right: 10px;"></i>Email:mail.com</h3>
+
+
+            </div>
+          </div>
+           
+        </div>
+        <div class="footer m-2">
+          <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-outline-danger">Send Message</button>
+          </form> 
+
+        </div>
+    </div>
+    <!-- end contact -->
+    <!-- start footer -->
+    <div class="footer-two">
+        <div class="continer">
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-facebook-messenger" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+            <p>Powerd By W3schhol</p>
+            <p>By Omar Rehan</p>
+        </div>
+    </div>
+    <!-- end footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+</body>
+</html>
